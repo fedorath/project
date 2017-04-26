@@ -14,11 +14,7 @@ from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-IMG = Camera()#Camera is intiated.
-Directory = "Photo" #Directory named photo
-if not os.path.exists("Photo"):#create a new directory
-	os.makedirs("Photo")#names it photo
-fmt = "%Y-%m-%d %H-%M-%S"#Date,Month,Year,Hour,Minute,Seconds
+
 
 ##########################################################################################################
 #				Sending Attached PNG files to recipient.			         #
@@ -47,7 +43,11 @@ def email(Gmail):
 ##########################################################################################################
 #					SimpleCV Object detection.				         #
 ##########################################################################################################
-
+IMG = Camera()#Camera is intiated.
+Directory = "Photo" #Directory named photo
+if not os.path.exists("Photo"):#create a new directory
+	os.makedirs("Photo")#names it photo
+fmt = "%Y-%m-%d %H-%M-%S"#Date,Month,Year,Hour,Minute,Seconds
 	
 while True:#While loop which grabs images until it is told to stop.
 
