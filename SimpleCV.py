@@ -85,8 +85,6 @@ while True:#While loop which grabs images until it is told to stop.
 		name = dt.now().strftime(fmt) # filename using date, month, time
 
 		i = 1 #counter
-		while os.path.exists("Photo/Intruder%s-%s.png" % (name, i)):
-			i += 1	
 		
 		PIC.save("Photo/Intruder%s-%s.png" % (name, i))#saves file with intruder and the date
 		
