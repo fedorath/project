@@ -19,7 +19,7 @@ Directory = "Photo" #Directory named photo
 if not os.path.exists("Photo"):#create a new directory
 	os.makedirs("Photo")#names it photo
 fmt = "%Y-%m-%d %H-%M-%S"#Date,Month,Year,Hour,Minute,Seconds
-disp = Display((640,480))
+
 ##########################################################################################################
 #				Sending Attached PNG files to recipient.			         #
 ##########################################################################################################
